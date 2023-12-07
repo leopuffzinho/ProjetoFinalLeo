@@ -1,0 +1,14 @@
+﻿.login {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background-color: grey !important;
+    border-color: white !important;
+}
+
+.mensagem {
+    font-size: 15px;
+    color: red;
+}

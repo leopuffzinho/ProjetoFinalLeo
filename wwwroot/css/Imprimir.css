@@ -1,0 +1,67 @@
+﻿titulo {
+    text-align: center;
+}
+
+.cliente {
+    display: flex;
+    margin-left: -20px;
+}
+
+    .cliente > h3 {
+        margin-left: 30px;
+    }
+
+.cor {
+    color: red;
+    margin-left: 20px;
+}
+
+.baixo {
+    display: flex;
+    margin-left: -10px;
+}
+
+    .baixo > h4 {
+        margin-left: 30px;
+    }
+
+.canto {
+    margin-left: 20px;
+    color: grey;
+}
+
+.fonte {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+.linha {
+    border-style: dotted;
+    border-width: 1px;
+    border-color: 660033;
+    font-family: verdana, arial;
+    font-size: 10pt;
+}
+
+.geral {
+    width: 70%;
+    height: 40%;
+    margin-left: 15%;
+}
+
+.baixo2 {
+    margin-left: 20px;
+}
+
+.baixo3 {
+    color: grey;
+    margin-left: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: 110px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}

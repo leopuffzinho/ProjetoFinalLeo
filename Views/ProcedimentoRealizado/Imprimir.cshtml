@@ -1,0 +1,32 @@
+﻿@model ProjetoFinalLeo.Models.ProcedimentoRealizado
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/Imprimir.css" asp-append-version="true" />
+<head>
+    <img class="logo" src="~/img/logopf.png"/>
+    <title>Laboratório Geral</title>
+</head>
+<body>
+    <main class="geral">
+        <header class="fonte">
+            <h1 class="titulo">Resultado do Exame</h1>
+            <div class="cliente">
+                <h3>NOME DO CLIENTE: @Html.DisplayFor(model => model.Cliente.ClienteNome)</h3>
+                <h3>SEXO: @Html.DisplayFor(model => model.Cliente.ClienteSexo) </h3>
+                <h3>CPF: @Html.DisplayFor(model => model.Cliente.ClienteCpf)</h3>
+                <br />
+                <h3>ENDEREÇO: @Html.DisplayFor(model => model.Cliente.ClienteEndereco) - N° @Html.DisplayFor(model => model.Cliente.ClienteNumero)</h3>
+                <h3>COLABORADOR: @Html.DisplayFor(model => model.Colaborador.ColaboradorNome)</h3>
+                <h3>CLÍNICA: GERAL</h3>
+            </div>
+            <h5 class="canto">PROCEDIMENTO: @Html.DisplayFor(model => model.Procedimento.ProcedimentoNome)</h5>
+            <h5 class="canto">LOCAL REALIZAÇÃO: @Html.DisplayFor(model => model.LocalRealizacao.LocalRealizacaoNome)</h5>
+            <h5 class="canto">HORA: @Html.DisplayFor(model => model.DataRealizacao)</h5>
+            <hr class="linha">
+            <h3 class="cor">OBSERVAÇÃO: @Html.DisplayFor(model => model.ObservacaoRealizacao)</h3>
+            <hr class="linha">
+            <h4 class="baixo3">METODOLOGIA: JAFFÉ AUTOMATIZADO</h4>
+        </header>
+    </main>
+</body>
